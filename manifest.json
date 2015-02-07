@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Clarin Sin PayWall",
+  "description": "Quita el molesto PayWall de clarin.com.",
+  "version": "1.0",
+  "icons": { "16": "16x16.png",
+             "48": "48x48.png",
+             "128": "128x128.png" },
+  "permissions": [
+    "tabs", 
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.clarin.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.clarin.com/*"],
+      "js": ["clarinete.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
