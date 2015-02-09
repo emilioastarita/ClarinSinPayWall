@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var code = [
-    '$.colorbox.remove(); ',
-    '$(document).bind("cbox_load", function(){ $.colorbox.remove(); } );'
+    'jQuery && $(document).bind("cbox_load", function(e) { if ($(e.currentTarget.activeElement).hasClass("modalLoginPase")) {$.colorbox.remove();}  } );'
   ].join('\n');
   var script = document.createElement('script');
   script.textContent = code;
