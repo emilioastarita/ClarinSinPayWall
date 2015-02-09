@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var code = [
-    '$("#iframe-registracion").attr("src", "#");',
-    '$("#LN_overlay").remove();',
-    '$.fn.modal = function(){};',
-    '$(document.body).on("shown.bs.modal", ".modal" , function (e) { $(e.currentTarget).modal("hide"); e.preventDefault();}); '
+    '$(document.body).on("shown.bs.modal", ".modal" , function (e) { $(e.currentTarget).find("#iframe-registracion").length && $(e.currentTarget).modal("hide"); }); '
   ].join('\n');
   var script = document.createElement('script');
   script.textContent = code;
