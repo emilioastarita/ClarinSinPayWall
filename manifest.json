@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Clarin Sin PayWall",
   "description": "Quita el molesto PayWall de clarin.com y lanacion.com.ar",
   "version": "1.3",
@@ -10,7 +10,8 @@
     "tabs", 
     "webRequest",
     "webRequestBlocking",
-    "*://*.clarin.com/*"
+    "*://*.clarin.com/*",
+    "*://*.ole.com.ar/*"
   ],
   "background": {
     "scripts": ["background.js"],
@@ -18,6 +19,11 @@
   },
 
   "content_scripts": [
+    {
+      "matches": ["*://*.ole.com.ar/*"],
+      "js": ["ole.js"],
+      "run_at": "document_start"
+    },
     {
       "matches": ["*://*.clarin.com/*"],
       "js": ["clarinete.js"],

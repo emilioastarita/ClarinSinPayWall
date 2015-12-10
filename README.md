@@ -8,5 +8,8 @@ Para instalar la extensión desde la Chrome Store:
 VERSION:
 
 1.1 Se remueve el modal de lanacion.com.ar
+
 1.2 Se filtra el tipo de colorbox a frenar para que anden los videos.
+
+1.3 Se remueve el modal/paywall de ole.com.ar
 
