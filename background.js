@@ -1,5 +1,5 @@
 var urls = [
-  "*://lw-app-pase.clarin.com/*",
+  "*://www.clarin.com/apistatic/api/loginwall/*",
   "*://www.ole.com.ar/apistatic/api/loginwall/*"
 ];
 function blockRequest(details) {

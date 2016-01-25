@@ -11,5 +11,6 @@ VERSION:
 
 1.2 Se filtra el tipo de colorbox a frenar para que anden los videos.
 
-1.3 Se remueve el modal/paywall de ole.com.ar
+1.4 Se remueve el modal/paywall de ole.com.ar
 
+1.5 Se bloquea directamente la API de Clarín porque cambió de código en Clarin.com y suplementos.
