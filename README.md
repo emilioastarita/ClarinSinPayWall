@@ -14,3 +14,5 @@ VERSION:
 1.4 Se remueve el modal/paywall de ole.com.ar
 
 1.5 Se bloquea directamente la API de Clarín porque cambió de código en Clarin.com y suplementos.
+
+1.6 Fix para nueva implementación de clarín en el loginwall.
