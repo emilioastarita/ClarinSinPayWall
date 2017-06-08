@@ -7,6 +7,8 @@ Para instalar la extensión desde la Chrome Store:
 
 VERSION:
 
+1.8 Fix Se están poniendo mas agresivos con los paywalls, así que directamente bloqueamos cookies y ponemos referer www.google.com.ar.
+
 1.7 Fix para nueva implementación de Olé en el loginwall.
 
 1.6 Fix para nueva implementación de Clarín en el loginwall.

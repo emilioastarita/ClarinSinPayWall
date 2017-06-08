@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Clarin Sin LoginWall",
+  "name": "Clarin y La Nación Sin LoginWall",
   "description": "Quita el molesto LoginWall de: Clarin.com, Lanacion.com.ar y Ole.com.ar",
-  "version": "1.7",
+  "version": "1.8",
   "icons": { "16": "16x16.png",
              "48": "48x48.png",
              "128": "128x128.png" },
@@ -11,6 +11,7 @@
     "webRequest",
     "webRequestBlocking",
     "*://*.clarin.com/*",
+    "*://*.lanacion.com.ar/*",
     "*://*.ole.com.ar/*"
   ],
   "background": {
@@ -18,22 +19,5 @@
     "persistent": true
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.ole.com.ar/*"],
-      "js": ["ole.js"],
-      "run_at": "document_start"
-    },
-    {
-      "matches": ["*://*.clarin.com/*"],
-      "js": ["clarinete.js"],
-      "run_at": "document_start"
-    },
-    {
-      "matches": ["*://*.lanacion.com.ar/*"],
-      "js": ["lanacion.js"],
-      "run_at": "document_start"
-    }
-
-  ]
+  "content_scripts": []
 }
