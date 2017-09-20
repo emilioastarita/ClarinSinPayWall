@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Clarin, La Nación y otros diarios Sin Registro",
+  "name": "Clarin, La Nación y otros Sin Registro",
   "description": "Quita el molesto registro de los diarios: Clarin.com, Lanacion.com.ar, Ole.com.ar y otros diarios",
   "version": "1.9",
   "icons": {
