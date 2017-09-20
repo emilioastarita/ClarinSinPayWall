@@ -1,23 +1,40 @@
 {
   "manifest_version": 2,
-  "name": "Clarin y La Nación Sin LoginWall",
-  "description": "Quita el molesto LoginWall de: Clarin.com, Lanacion.com.ar y Ole.com.ar",
-  "version": "1.8",
-  "icons": { "16": "16x16.png",
-             "48": "48x48.png",
-             "128": "128x128.png" },
+  "name": "Clarin, La Nación y otros diarios Sin Registro",
+  "description": "Quita el molesto registro de los diarios: Clarin.com, Lanacion.com.ar, Ole.com.ar y otros diarios",
+  "version": "1.9",
+  "icons": {
+    "16": "16x16.png",
+    "48": "48x48.png",
+    "128": "128x128.png"
+  },
   "permissions": [
-    "tabs", 
+    "tabs",
     "webRequest",
     "webRequestBlocking",
+    "cookies",
     "*://*.clarin.com/*",
     "*://*.lanacion.com.ar/*",
-    "*://*.ole.com.ar/*"
+    "*://*.ole.com.ar/*",
+    "*://*.elpais.com.uy/*"
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": true
   },
-
-  "content_scripts": []
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.clarin.com/*",
+        "*://*.lanacion.com.ar/*",
+        "*://*.ole.com.ar/*",
+        "*://*.elpais.com.uy/*"
+      ],
+      "js": [
+        "clear-storage.js"
+      ]
+    }
+  ]
 }

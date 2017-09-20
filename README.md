@@ -1,11 +1,19 @@
-# ClarinSinPayWall
-Quita el molesto PayWall de clarin.com y de lanacion.com.ar
+# No Login Walls para Diarios | Chrome Extension
+
+Quita el molesto Login Wall / Pay Wall / Registro de:
+ 
+ * www.clarin.com
+ * www.lanacion.com.ar
+ * www.ole.com.ar
+ * www.elpais.com.uy
 
 Para instalar la extensión desde la Chrome Store:
 
 [https://chrome.google.com/webstore/detail/fhgdeocikifjoabgkjfaemfbmakjhjjk/](https://chrome.google.com/webstore/detail/fhgdeocikifjoabgkjfaemfbmakjhjjk/)
 
 VERSION:
+
+1.9 Agregado elpais.com.uy: Se borran todas las cookies ya seteadas al cargar la página mediante content script. Se bloeuqea el set-cookie de las requests. 
 
 1.8 Fix Se están poniendo mas agresivos con los paywalls, así que directamente bloqueamos cookies y ponemos referer www.google.com.ar.
 
